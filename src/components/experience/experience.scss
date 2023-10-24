@@ -1,0 +1,29 @@
+@import "../../app.scss";
+
+.experience {
+    
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+  .heading {
+    margin-bottom: 7rem;
+    width: 100%;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    @include mobile{
+        font-size: 4rem;
+        margin-bottom: 4rem;
+
+    }
+  }
+  .container{
+    width: 75%;
+    margin: auto;
+    position: relative;
+    @include mobile{
+        width: 100%;
+
+    }
+  }
+}

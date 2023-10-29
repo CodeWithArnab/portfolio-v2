@@ -50,25 +50,32 @@ const Hero = () => {
           <motion.h2 variants={textVariants}>ARNAB DEBNATH</motion.h2>
           <motion.h1 variants={textVariants}>
             I&apos;m a&nbsp;
-            <Typewriter
-              words={[
-                "Web Developer.",
-                "Competitive Programmer.",
-                "Problem Solver.",
-              ]}
-              loop={5}
-              cursor
-              cursorStyle="|"
-              typeSpeed={70}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
+            <span className="dropShadow">
+              <Typewriter
+                words={[
+                  "Web Developer.",
+                  "Competitive Programmer.",
+                  "Problem Solver.",
+                ]}
+                loop={5}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <button>See the latest works</button>
             <button>Contact Me</button>
           </motion.div>
-          <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
+          <motion.img
+            variants={textVariants}
+            animate="scrollButton"
+            src="/scroll.png"
+            alt=""
+          />
         </motion.div>
         <motion.div
           className="slidingTextContainer"

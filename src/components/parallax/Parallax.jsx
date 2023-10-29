@@ -1,6 +1,22 @@
 import { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
+const variants = {
+    initial: {
+    //   x: -500,
+      y: -100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
 
 const Parallax = ({ type }) => {
   const ref = useRef();
@@ -24,8 +40,8 @@ const Parallax = ({ type }) => {
             : "linear-gradient(180deg, #111132, #505064)",
       }}
     >
-      <motion.h1 style={{ y: yText }}>
-        {type === "experience" ? "Experience" : "Projects"}
+      <motion.h1 variants={variants} initial="initial" whileInView="animate" style={{ y: yText }}>
+        {type === "experience" ? "What I did?" : "What I made?"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>
       <motion.div

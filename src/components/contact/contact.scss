@@ -7,11 +7,19 @@
   display: flex;
   align-items: center;
   gap: 50px;
+  padding: 0 10px;
 
   @include mobile {
     width: 100%;
     padding: 10px;
     flex-direction: column;
+    gap: 10px;
+  }
+  @include tablet {
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    // flex-direction: column;wa
   }
 
   .textContainer {
@@ -19,14 +27,14 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    .item{
-      h2{
+    .item {
+      h2 {
         font-weight: 700;
       }
     }
 
     @include mobile {
-      gap: 20px;
+      gap: 10px;
       text-align: center;
       align-items: center;
       margin-top: 70px;
@@ -39,6 +47,9 @@
       @include mobile {
         font-size: 36px;
       }
+      @include tablet {
+        font-size: 36px;
+      }
     }
 
     span {
@@ -49,19 +60,34 @@
   .formContainer {
     flex: 1;
     position: relative;
-    
+
     @include mobile {
-      padding: 50px;
+      // padding: 50px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-
     .phoneSvg {
-        // background-color: aqua;
+      // background-color: aqua;
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: 1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        @include mobile {
+          width: 15rem;
+          path {
+            stroke-width: 0.4 !important;
+          }
+        }
+      }
     }
 
     form {
@@ -69,7 +95,7 @@
       flex-direction: column;
       gap: 20px;
       // z-index: 2 !important;
-
+      width: 100%;
       input,
       textarea {
         padding: 20px;
@@ -80,17 +106,33 @@
 
         @include mobile {
           padding: 10px;
+          // height: 3em;
+        }
+        @include tablet {
+          padding: 10px;
+        }
+      }
+      textarea {
+        @include mobile {
+          height: 4em;
+          resize: none;
         }
       }
 
       button {
+        border-radius: 10px;
         padding: 20px;
         border: none;
-        background-color: orange;
+        background-color: yellow;
         cursor: pointer;
-        font-weight: 500;
+        font-weight: 700;
+        color: black;
         @include mobile {
           padding: 10px;
+        }
+        &:hover {
+          background-color: rgb(255, 217, 0);
+          
         }
       }
     }

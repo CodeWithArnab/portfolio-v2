@@ -9,17 +9,14 @@ const Navbar = () => {
       <div className="wrapper">
         <span>Arnab Debnath</span>
         <div className="social">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
+          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/arnab-debnath-46a462215/">
+            <img src="/linkedin.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/instagram.png" alt="" />
+          <a target="_blank" rel="noreferrer" href="https://leetcode.com/arnab_2002/">
+            <img src="/leetcode.png" alt="" />
           </a>
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
-          </a>
-          <a href="#">
-            <img src="/youtube.png" alt="" />
+          <a target="_blank" rel="noreferrer" href="https://github.com/CodeWithArnab">
+            <img src="/github.png" alt="" />
           </a>
         </div>
       </div>

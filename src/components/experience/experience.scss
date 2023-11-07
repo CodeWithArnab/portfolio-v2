@@ -2,8 +2,9 @@
 
 .experience {
     
-  margin-top: 16rem;
-  margin-bottom: 16rem;
+  // margin-top: 16rem;
+  // margin-bottom: 16rem;
+  
   .heading {
     margin-bottom: 7rem;
     width: 100%;
@@ -12,18 +13,22 @@
     font-weight: 700;
     text-align: center;
     @include mobile{
-        font-size: 4rem;
+        font-size: 3rem;
         margin-bottom: 4rem;
 
     }
   }
   .container{
+    max-width: 40rem;
     width: 75%;
     margin: auto;
     position: relative;
     @include mobile{
-        width: 100%;
+        width: 80%;
 
+    }
+    @include tablet{
+      width: 80%;
     }
   }
 }

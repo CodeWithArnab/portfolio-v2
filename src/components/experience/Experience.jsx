@@ -21,7 +21,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li className="my-8 first:mt-0 last:mb-0 sm:w-[60%] w-4/5 mx-auto flex flex-col items-center justify-between">
       <div>
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold md:text-2xl">
           {position}&nbsp;
           <a
             href={companyLink}

@@ -3,6 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const resumeUrl="https://drive.google.com/file/d/1rvVyydZQTyl96-SVOtLBted1H5uZrPIg/view?usp=drive_link";
   const textVariants = {
     initial: {
       x: -500,
@@ -67,8 +68,8 @@ const Hero = () => {
             </span>
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <button>See the latest works</button>
-            <button>Contact Me</button>
+            <button><a href="#Projects">See the latest works</a></button>
+            <button><a href={resumeUrl} target="_blank" rel="noreferrer">Resume</a></button>
           </motion.div>
           <motion.img
             variants={textVariants}
